@@ -14,7 +14,7 @@
 
 A data collection pipeline that scrapes real estate listings from **cian.ru** (Chelyabinsk region), cleans and structures the data, geocodes addresses into coordinates, and outputs a dataset ready to be consumed by an ML pricing model and a backend service.
 
-This was built as the data-collection stage for the [RealtorConnect](https://github.com/vladiiiiiii/Realtor-connect-backend) project — the resulting dataset feeds directly into the CatBoost price prediction model used in that app.
+This was built as the data-collection stage for the [RealtorConnect](https://github.com/vladiiiiiii/Realtor-connect-backend) project — the resulting dataset feeds directly into the [CatBoost price prediction model](https://github.com/vladiiiiiii/ML-real_estate) used in that app.
 
 ## How It Works
 
@@ -71,7 +71,8 @@ Run the notebook top to bottom; the final (Playwright-based) section produces th
 
 ## Related Repositories
 
-- [RealtorConnect Backend](https://github.com/vladiiiiiii/Realtor-connect-backend) — consumes this dataset for the ML price estimation feature
+- [ML Pricing Model](https://github.com/vladiiiiiii/ML-real_estate) — trains the CatBoost model on this dataset
+- [RealtorConnect Backend](https://github.com/vladiiiiiii/Realtor-connect-backend) — serves the trained model in production
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:14b8a6,55:2563eb,100:0f172a&height=100&section=footer" alt="Footer" />
